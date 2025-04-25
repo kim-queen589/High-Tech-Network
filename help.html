@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>High-Tech Network - Help & Support</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="help.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar (Same as other pages) -->
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <h2>High-Tech Network</h2>
+                <span class="back-arrow">←</span>
+            </div>
+
+            <nav class="sidebar-menu">
+                <div class="menu-section">
+                    <div class="menu-item">
+                        <i class="fas fa-th-large"></i>
+                        <span>Dashboard</span>
+                    </div>
+                </div>
+
+                <div class="menu-section">
+                    <h3>PAYMENTS</h3>
+                    <div class="menu-item">
+                        <i class="fas fa-money-bill"></i>
+                        <span>Invest Now</span>
+                    </div>
+                    <div class="menu-item">
+                        <i class="fas fa-gift"></i>
+                        <span>Training Bonus</span>
+                    </div>
+                    <div class="menu-item">
+                        <i class="fas fa-wallet"></i>
+                        <span>Withdraw</span>
+                    </div>
+                    <div class="menu-item">
+                        <i class="fas fa-exchange-alt"></i>
+                        <span>Money Transfer</span>
+                    </div>
+                </div>
+
+                <div class="menu-section">
+                    <h3>TRANSACTIONS</h3>
+                    <div class="menu-item">
+                        <i class="fas fa-list"></i>
+                        <span>All Transactions</span>
+                    </div>
+                    <div class="menu-item">
+                        <i class="fas fa-download"></i>
+                        <span>Deposit History</span>
+                    </div>
+                    <div class="menu-item">
+                        <i class="fas fa-upload"></i>
+                        <span>Withdraw History</span>
+                    </div>
+                    <div class="menu-item">
+                        <i class="fas fa-history"></i>
+                        <span>Bonus Withdraw History</span>
+                    </div>
+                    <div class="menu-item">
+                        <i class="fas fa-award"></i>
+                        <span>Training Bonus History</span>
+                    </div>
+                    <div class="menu-item">
+                        <i class="fas fa-file-invoice"></i>
+                        <span>Investment History</span>
+                    </div>
+                </div>
+
+                <div class="menu-section">
+                    <div class="menu-item">
+                        <i class="fas fa-cog"></i>
+                        <span>Settings</span>
+                    </div>
+                    <div class="menu-item active">
+                        <i class="fas fa-question-circle"></i>
+                        <span>Help</span>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <div class="main-content">
+            <!-- Header (Same as other pages) -->
+            <div class="header">
+                <!-- ... Header content ... -->
+            </div>
+
+            <!-- Help Content -->
+            <div class="page dashboard-layout">
+                <h1>Help & Support</h1>
+                <p class="subtitle">Get assistance and answers to your questions</p>
+
+                <!-- Quick Support Options -->
+                <div class="quick-support">
+                    <div class="support-card">
+                        <i class="fas fa-comments"></i>
+                        <h3>Live Chat</h3>
+                        <p>Chat with our support team</p>
+                        <button class="support-btn" onclick="openLiveChat()">Start Chat</button>
+                    </div>
+                    <div class="support-card">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Email Support</h3>
+                        <p>Send us an email</p>
+                        <button class="support-btn" onclick="window.location.href='mailto:q603740@gmail.com'">Send Email</button>
+                    </div>
+                    <div class="support-card">
+                        <i class="fas fa-phone"></i>
+                        <h3>Phone Support</h3>
+                        <p>Call our support team</p>
+                        <button class="support-btn" onclick="window.location.href='tel:+1234567890'">Call Now</button>
+                    </div>
+                </div>
+
+                <!-- FAQ Section -->
+                <div class="faq-section">
+                    <h2>Frequently Asked Questions</h2>
+                    
+                    <!-- Account & Profile -->
+                    <div class="faq-category">
+                        <h3><i class="fas fa-user"></i> Account & Profile</h3>
+                        <div class="faq-list">
+                            <div class="faq-item">
+                                <div class="faq-question">
+                                    How do I change my password?
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                                <div class="faq-answer">
+                                    Go to Settings > Security Settings, enter your current password, and then set your new password.
+                                </div>
+                            </div>
+                            <div class="faq-item">
+                                <div class="faq-question">
+                                    How can I update my profile information?
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                                <div class="faq-answer">
+                                    Navigate to Settings > Profile Settings to update your personal information and profile picture.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Investments -->
+                    <div class="faq-category">
+                        <h3><i class="fas fa-money-bill"></i> Investments</h3>
+                        <div class="faq-list">
+                            <div class="faq-item">
+                                <div class="faq-question">
+                                    How do I start investing?
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                                <div class="faq-answer">
+                                    Go to the Invest Now page, choose your preferred investment plan, and follow the instructions to complete your investment.
+                                </div>
+                            </div>
+                            <div class="faq-item">
+                                <div class="faq-question">
+                                    When do I receive my profits?
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                                <div class="faq-answer">
+                                    Profits are credited to your account daily based on your investment plan. You can view your earnings in the dashboard.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Withdrawals -->
+                    <div class="faq-category">
+                        <h3><i class="fas fa-wallet"></i> Withdrawals</h3>
+                        <div class="faq-list">
+                            <div class="faq-item">
+                                <div class="faq-question">
+                                    How do I withdraw my earnings?
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                                <div class="faq-answer">
+                                    Go to the Withdraw page, select your preferred payment method, enter the amount you wish to withdraw, and follow the instructions.
+                                </div>
+                            </div>
+                            <div class="faq-item">
+                                <div class="faq-question">
+                                    What is the minimum withdrawal amount?
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                                <div class="faq-answer">
+                                    The minimum withdrawal amount is Rs 1,000. This applies to all payment methods.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-section">
+                    <h2>Still Need Help?</h2>
+                    <p>Send us a message and we'll get back to you as soon as possible.</p>
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <select id="subject" required>
+                                <option value="">Select Topic</option>
+                                <option value="account">Account Issues</option>
+                                <option value="investment">Investment Questions</option>
+                                <option value="withdrawal">Withdrawal Support</option>
+                                <option value="technical">Technical Support</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <label for="subject">Subject</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" rows="5" required></textarea>
+                            <label for="message">Message</label>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="help.js"></script>
+</body>
+</html> 

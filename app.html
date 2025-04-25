@@ -1,0 +1,357 @@
+l<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>High-Tech Network</title>
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Home Page -->
+        <div id="home-page" class="page">
+            <div class="home-container">
+                <!-- Hero Section -->
+                <div class="hero-section">
+                    <div class="hero-content">
+                        <h1>Welcome to High-Tech Network</h1>
+                        <p>Owned by Eman Fatima</p>
+                        <div class="hero-buttons">
+                            <button class="btn login-btn" onclick="showPage('login')">Login</button>
+                            <button class="btn register-btn" onclick="showPage('register')">Register</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Features Section -->
+                <div class="features-section">
+                    <h2>Our Features</h2>
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <i class="fas fa-money-bill-wave"></i>
+                            <h3>Investment Plans</h3>
+                            <p>Choose from our variety of investment plans with daily profit returns</p>
+                        </div>
+                        <div class="feature-card">
+                            <i class="fas fa-graduation-cap"></i>
+                            <h3>Training Bonus</h3>
+                            <p>Earn bonuses by completing training modules and courses</p>
+                        </div>
+                        <div class="feature-card">
+                            <i class="fas fa-users"></i>
+                            <h3>Referral System</h3>
+                            <p>Earn through our multi-level referral program</p>
+                        </div>
+                        <div class="feature-card">
+                            <i class="fas fa-mobile-alt"></i>
+                            <h3>Easy Withdrawals</h3>
+                            <p>Quick withdrawals through EasyPaisa and JazzCash</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Section -->
+                <div class="contact-section">
+                    <h2>Contact Us</h2>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <p>q603740@gmail.com</p>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <p>Contact Support</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Login Page -->
+        <div id="login-page" class="page" style="display: none;">
+            <div class="auth-container">
+                <div class="login-form">
+                    <div class="form-header">
+                        <h2>Owned By Eman Fatima</h2>
+                        <p class="owner-email">Contact: q603740@gmail.com</p>
+                        <h1>Welcome Back</h1>
+                        <p>Please login to your account</p>
+                    </div>
+
+                    <form id="loginForm">
+                        <div class="form-group">
+                            <input type="text" id="userName" name="userName" placeholder=" " required>
+                            <label for="userName">Username</label>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="password" id="password" name="password" placeholder=" " required>
+                            <label for="password">Password</label>
+                        </div>
+
+                        <div class="form-options">
+                            <div class="checkbox">
+                                <input type="checkbox" id="remember" name="remember">
+                                <label for="remember">Remember me</label>
+                            </div>
+                            <a href="#" class="forgot-password">Forgot Password?</a>
+                        </div>
+
+                        <button type="submit" class="login-btn">Login</button>
+
+                        <div class="form-footer">
+                            <p>Don't have an account? <a href="#" onclick="showPage('register')">Register</a></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Register Page -->
+        <div id="register-page" class="page" style="display: none;">
+            <div class="auth-container">
+                <div class="registration-form">
+                    <div class="form-header">
+                        <h2>Owned By Eman Fatima</h2>
+                        <p class="owner-email">Contact: q603740@gmail.com</p>
+                        <h1>Registration</h1>
+                        <p>please fill your information</p>
+                    </div>
+
+                    <form id="registrationForm">
+                        <div class="form-group">
+                            <input type="text" id="sponsorId" name="sponsorId" placeholder=" " required>
+                            <label for="sponsorId">Sponsor id</label>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" id="registrationCode" name="registrationCode" placeholder=" " required>
+                            <label for="registrationCode">Registration code</label>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" id="firstName" name="firstName" placeholder=" " required>
+                            <label for="firstName">First Name</label>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" id="lastName" name="lastName" placeholder=" " required>
+                            <label for="lastName">Last Name</label>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" id="pin" name="pin" placeholder=" " required>
+                            <label for="pin">pin 4 digit</label>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" id="registerUserName" name="userName" placeholder=" " required>
+                            <label for="registerUserName">User Name</label>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder=" " required>
+                            <label for="email">Email</label>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="password" id="registerPassword" name="password" placeholder=" " required>
+                            <label for="registerPassword">Password</label>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="password" id="repeatPassword" name="repeatPassword" placeholder=" " required>
+                            <label for="repeatPassword">Repeat Password</label>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" placeholder=" " required>
+                            <label for="phone">Phone</label>
+                        </div>
+
+                        <div class="form-group checkbox">
+                            <input type="checkbox" id="terms" name="terms" required>
+                            <label for="terms">I agree to the terms & conditions</label>
+                        </div>
+
+                        <button type="submit" class="register-btn">Register</button>
+
+                        <div class="form-footer">
+                            <p>Already have an account? <a href="#" onclick="showPage('login')">Login</a></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Dashboard Page -->
+        <div id="dashboard-page" class="page" style="display: none;">
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <div class="sidebar-header">
+                    <h2>High-Tech Network</h2>
+                    <span class="back-arrow">←</span>
+                </div>
+
+                <nav class="menu-section">
+                    <div class="menu-item active" data-page="dashboard">
+                        <i class="fas fa-th-large"></i>
+                        <span>Dashboard</span>
+                    </div>
+
+                    <div class="menu-section">
+                        <h3>PAYMENTS</h3>
+                        <div class="menu-item" data-page="invest">
+                            <i class="fas fa-money-bill"></i>
+                            <span>Invest Now</span>
+                        </div>
+                        
+                        <div class="menu-item" data-page="training-bonus">
+                            <i class="fas fa-gift"></i>
+                            <span>Training Bonus</span>
+                        </div>
+                        <div class="menu-item" data-page="withdraw">
+                            <div class="menu-icons">
+                                <i class="fas fa-mobile-alt" title="EasyPaisa"></i>
+                                <i class="fas fa-phone" title="JazzCash"></i>
+                            </div>
+                            <span>Withdraw</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-section">
+                        <h3>TRANSACTIONS</h3>
+                        <div class="menu-item" data-page="transactions">
+                            <i class="fas fa-list"></i>
+                            <span>All Transactions</span>
+                        </div>
+                        <div class="menu-item" data-page="deposit-history">
+                            <i class="fas fa-download"></i>
+                            <span>Deposit History</span>
+                        </div>
+                        <div class="menu-item" data-page="withdraw-history">
+                            <i class="fas fa-upload"></i>
+                            <span>Withdraw History</span>
+                        </div>
+                        <div class="menu-item" data-page="bonus-withdraw-history">
+                            <i class="fas fa-history"></i>
+                            <span>Bonus Withdraw History</span>
+                        </div>
+                        <div class="menu-item" data-page="training-bonus-history">
+                            <i class="fas fa-award"></i>
+                            <span>Training Bonus History</span>
+                        </div>
+                        <div class="menu-item" data-page="investment-history">
+                            <i class="fas fa-file-invoice"></i>
+                            <span>Investment History</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-section">
+                        <h3>SETTINGS</h3>
+                        <div class="menu-item" data-page="settings">
+                            <i class="fas fa-cog"></i>
+                            <span>Settings</span>
+                        </div>
+                        <div class="menu-item" data-page="help">
+                            <i class="fas fa-question-circle"></i>
+                            <span>Help</span>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="main-content">
+                <!-- Header -->
+                <div class="header">
+                    <div class="user-info">
+                        <img src="profile-placeholder.png" alt="Profile" class="profile-img">
+                        <div class="user-details">
+                            <span class="user-name">User Name</span>
+                            <span class="user-role">Member</span>
+                        </div>
+                    </div>
+                    <div class="header-right">
+                        <button class="home-btn" onclick="showPage('home')">Home</button>
+                        <button class="logout-btn" onclick="logout()">Logout</button>
+                    </div>
+                </div>
+
+                <!-- Dashboard Content -->
+                <div class="dashboard-layout">
+                    <!-- Balance Cards -->
+                    <div class="balance-cards">
+                        <div class="card">
+                            <h3>Available Balance</h3>
+                            <h2>Rs <span id="availableBalance">0</span></h2>
+                        </div>
+                        <div class="card">
+                            <h3>Withdrawable Balance</h3>
+                            <h2>Rs <span id="withdrawableBalance">0</span></h2>
+                        </div>
+                        <div class="card">
+                            <h3>Training Bonus</h3>
+                            <h2>Rs <span id="trainingBonus">0</span></h2>
+                        </div>
+                        <div class="card">
+                            <h3>Total Invested</h3>
+                            <h2>Rs <span id="totalInvested">0</span></h2>
+                        </div>
+                    </div>
+
+                    <!-- Stats Grid -->
+                    <div class="stats-grid">
+                        <!-- Profile Card -->
+                        <div class="profile-card">
+                            <img src="profile-placeholder.png" alt="Profile" class="large-profile-img">
+                            <button class="edit-profile">
+                                <i class="fas fa-pencil-alt"></i>
+                                Edit Profile
+                            </button>
+                        </div>
+
+                        <!-- Stats Cards -->
+                        <div class="stat-card">
+                            <i class="fas fa-users"></i>
+                            <h3>Total Points</h3>
+                            <h2><span id="totalPoints">0</span></h2>
+                        </div>
+                        <div class="stat-card">
+                            <i class="fas fa-user-plus"></i>
+                            <h3>Direct Referrals</h3>
+                            <h2><span id="directReferrals">0</span></h2>
+                        </div>
+                        <div class="stat-card">
+                            <i class="fas fa-network-wired"></i>
+                            <h3>Indirect Referrals</h3>
+                            <h2><span id="indirectReferrals">0</span></h2>
+                        </div>
+                    </div>
+
+                    <!-- Info Cards -->
+                    <div class="info-cards">
+                        <div class="info-card">
+                            <h3>Rank</h3>
+                            <p><span id="userRank">Member</span></p>
+                        </div>
+                        <div class="info-card">
+                            <h3>Member Since</h3>
+                            <p><span id="memberSince">Jan 2024</span></p>
+                        </div>
+                        <div class="info-card">
+                            <h3>Total Earnings</h3>
+                            <p>Rs <span id="totalEarnings">0</span></p>
+                        </div>
+                        <div class="info-card">
+                            <h3>Sponsor</h3>
+                            <p><span id="sponsorName">Admin</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html> 
